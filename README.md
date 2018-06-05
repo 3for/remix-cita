@@ -24,7 +24,6 @@ Install **npm** and **node.js** (see https://docs.npmjs.com/getting-started/inst
 ###The browser-solidity git is OUT OF DATE, use https://github.com/ethereum/remix-ide INSTEAD.
 
 ```bash
-npm install node-gyp -g
 git clone https://github.com/CITA-Toys/remix-cita.git
 cd remix-cita
 vim package.json ###And change the corresponding scripts "remixd to "./node_modules/remixd/bin/remixd -s ./contracts" 【""remixd":"./node_modules/remixd/bin/remixd -s ./contracts",】
