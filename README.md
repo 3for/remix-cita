@@ -20,21 +20,21 @@ Note: it contains the latest release of Solidity available at the time of the pa
 ## INSTALLATION:
 
 Install **npm** and **node.js** (see https://docs.npmjs.com/getting-started/installing-node), then do:
+
 ###The browser-solidity git is OUT OF DATE, use https://github.com/ethereum/remix-ide INSTEAD.
-```bash
-git clone -branch v0.6.3 https://github.com/ethereum/remix-ide.git
-mv remix-ide browser-solidity
-cd browser-solidity
-vim package.json ##And change the "fast-async" version to "6.3.1"【"fast-async": "6.3.1",】
-npm install
-```
 
 ```bash
+npm install node-gyp -g
 git clone https://github.com/CITA-Toys/remix-cita.git
 cd remix-cita
-vim package.json ##And change the "fast-async" version to "6.3.1"【"fast-async": "6.3.1",】
-###And change the corresponding scripts "remixd to "./node_modules/remixd/bin/remixd -s ./contracts" 【""remixd": "./node_modules/remixd/bin/remixd -s ./contracts",】
+vim package.json ###And change the corresponding scripts "remixd to "./node_modules/remixd/bin/remixd -s ./contracts" 【""remixd":"./node_modules/remixd/bin/remixd -s ./contracts",】
 npm install
+
+npm run pullremix
+npm run linkremixcore
+npm run linkremixlib
+npm run linkremixsolidity
+npm run linkremixdebugger
 ```
 
 ## DEVELOPING:
