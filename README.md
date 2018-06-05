@@ -34,6 +34,7 @@ npm run linkremixcore
 npm run linkremixlib
 npm run linkremixsolidity
 npm run linkremixdebugger
+npm run downloadsolc
 ```
 
 ## DEVELOPING:
